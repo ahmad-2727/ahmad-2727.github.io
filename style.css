@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f8f5;
+  color: #2c2c2c;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #2f6e2f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-style: italic;
+  color: #555;
+}
+
+/* Card Sections */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.arabic {
+  font-family: 'Noto Naskh Arabic', serif;
+  font-size: 1.6rem;
+  margin: 10px 0;
+  color: #1e4d1e;
+}
+
+.translation {
+  font-style: italic;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.card-link {
+  text-decoration: none;   
+  color: inherit;          
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card-link:hover {
+  transform: scale(1.02);
+}
+
+.detail-img {
+  width: 100%;
+  max-width: 1400px;     /* Maximum size image ka */
+  height: 400px;
+  display: block;
+  margin: 20px auto;    /* Center image with space around */
+  border-radius: 12px;  /* Rounded corners (optional) */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow */
+}
+
+
+
+
+
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
